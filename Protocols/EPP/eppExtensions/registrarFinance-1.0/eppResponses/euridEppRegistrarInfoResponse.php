@@ -21,7 +21,7 @@ class euridEppRegistrarInfoResponse extends eppResponse {
 
     public function getBalance() {
         $xpath = $this->xPath();
-        $result = $xpath->query('//registrarFinance:accountBalance');
+        $result = $xpath->query('//registrarFinance:availableAmount');
         if ($result->length > 0) {
             return $result->item(0)->nodeValue;
         } else {
