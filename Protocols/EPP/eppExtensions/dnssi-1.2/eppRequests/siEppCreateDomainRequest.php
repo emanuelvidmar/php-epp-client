@@ -11,6 +11,7 @@ class siEppCreateDomainRequest extends eppCreateDomainRequest
             $this->createPw($createinfo);
         }
     }
+
     public function createPw(eppDomain $createinfo)
     {
         // Create PW tag even if there is no pw
@@ -19,5 +20,18 @@ class siEppCreateDomainRequest extends eppCreateDomainRequest
             $authinfo->appendChild($this->createElement('domain:pw', ""));
             $this->domainobject->appendChild($authinfo);
         }
+    }
+
+    public function updateDNSCheck($bool) {
+
+        $dnsCheckValue = $bool ? 'true' : 'false';
+        $ext = $this->createElement('extension');
+        $dnsCheck = $this->createElement('dnsCheck:update');
+        $domdata = $this->createElement('dnsCheck:check', $dnsCheckValue);
+        $dnsCheck->appendChild($domdata);
+        $ext->appendChild($dnsCheck);
+        $this->getCommand()->appendChild($ext);
+        parent::addSessionId();
+
     }
 }
