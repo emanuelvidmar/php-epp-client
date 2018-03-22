@@ -1,7 +1,7 @@
 <?php
 namespace Metaregistrar\EPP;
 
-class regtonsEppRenewResponse extends eppResponse {
+class regtonsEppOrderResponse extends eppResponse {
     function __construct() {
         parent::__construct();
     }
