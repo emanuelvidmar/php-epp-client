@@ -10,3 +10,4 @@ $this->addCommandResponse('Metaregistrar\EPP\regtonsEppRegistrarInfoRequest', 'M
 $this->addCommandResponse('Metaregistrar\EPP\eppCheckDomainRequest', 'Metaregistrar\EPP\regtonsEppCheckDomainResponse');
 $this->addCommandResponse('Metaregistrar\EPP\regtonsEppPricelistRequest', 'Metaregistrar\EPP\regtonsEppPricelistResponse');
 $this->addCommandResponse('Metaregistrar\EPP\regtonsEppSpecialPricelistRequest', 'Metaregistrar\EPP\regtonsEppSpecialPricelistResponse');
+$this->addCommandResponse('Metaregistrar\EPP\regtonsEppCreateDomainRequest', 'Metaregistrar\EPP\eppCreateDomainResponse');
