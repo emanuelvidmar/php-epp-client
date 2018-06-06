@@ -5,4 +5,5 @@ $this->addCommandResponse('Metaregistrar\EPP\eppRenewRequest', 'Metaregistrar\EP
 $this->addCommandResponse('Metaregistrar\EPP\eppTransferRequest', 'Metaregistrar\EPP\regtonsEppOrderResponse');
 $this->addCommandResponse('Metaregistrar\EPP\eppCreateDomainRequest', 'Metaregistrar\EPP\regtonsEppOrderResponse');
 $this->addCommandResponse('Metaregistrar\EPP\eppUpdateDomainRequest', 'Metaregistrar\EPP\regtonsEppOrderResponse');
-
+$this->addCommandResponse('Metaregistrar\EPP\regtonsEppCreateDomainRequest', 'Metaregistrar\EPP\regtonsEppOrderResponse');
+$this->addCommandResponse('Metaregistrar\EPP\regtonsEppTransferDomainRequest', 'Metaregistrar\EPP\regtonsEppOrderResponse');

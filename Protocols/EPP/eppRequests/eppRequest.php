@@ -114,7 +114,7 @@ class eppRequest extends \DOMDocument {
     /**
      * @return \DomElement
      */
-    public function getExtension() {
+    public function     getExtension() {
         if (!$this->extension) {
             #
             # If its not there, then create extension structure
